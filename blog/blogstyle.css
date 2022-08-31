@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --mont: 'Montserrat', sans-serif;
+}
+header{
+    background: #26272D80 url(img/blog-hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: 0;
+}
+header::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 70vh;
+    background-color: #26272D80;
+    z-index: -1;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.menu{
+    padding: 50px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .agency a, .nav-menu ul a, 
+.contact .agency a{
+    color: #FFFFFF;
+}
+.nav-menu ul.dropdown-link li a{
+    color: #26272D;
+}
+header .agency a, .contact .agency a{
+    font-size: 18px;
+}
+.nav-menu ul a{
+    font-size: 16px;
+}
+header .agency a span:first-child, 
+.contact .agency a span:first-child{
+    font-weight: bolder;
+}
+header .agency a span:nth-child(2), 
+.contact .agency a span:nth-child(2){
+    font-weight: 500;
+}
+.nav-menu > ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-menu > ul li a{
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu > ul li a:hover, 
+.text ol li a:first-child:Hover{
+    color: #6fc754;
+}
+.nav-menu > ul li a.over{
+    color: #6fc754;
+}
+.bxs-down-arrow{
+    padding: 0px 0px 0px 5px;
+}
+.bxs-down-arrow, .bxs-up-arrow{
+    font-size: 12px;
+}
+.dropdown-link{
+    top: 25px;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #6fc754;
+    background-color: #fff;
+    width: 130px;
+    padding: 10px;
+}
+header .nav-menu ul li:nth-child(2) > ul{
+    display: none;
+}
+header .nav-menu ul li:nth-child(2) > ul li{
+    transition: all 0.3s ease-in-out;
+    
+}
+header .nav-menu ul li:nth-child(2) > ul li:hover{
+    margin-left: 20px;
+}
+header .nav-menu ul li:nth-child(2){
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+header .nav-menu ul li:nth-child(2):hover{
+    color: #6fc754;
+}
+header .nav-menu ul li:nth-child(2):hover > ul{
+    display: block;
+}
+.dropdown-link li{
+    margin: 0px 0px 10px 0px;
+}
+.text{
+    color: #FFFFFF;
+    margin: 180px 0 0 0;
+    text-align: center;
+}
+.text h1{
+    position: relative;
+    font-size: 52px;
+}
+.text h1::after,
+.text h1::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    background-color: #FFFFFF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.text h1::after{
+    top: 85px;
+    height: 6px;
+}
+.text h1::before{
+    top: 95px;
+    height: 3px;
+}
+.text ol{
+    margin: auto;
+    display: flex;
+    width: 9rem;
+    gap: 20px;
+    font-size: 14px;
+    padding: 60px 15px 8px;
+}
+.text ol li a:first-child{
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+/* DESCRIPTION */
+.descrip{
+    color: #26292C;
+    padding: 70px 0px 0px;
+}
+.descrip01{
+    display: flex;
+    gap: 20px;
+}
+.des02{
+    width: 40%;
+}
+.descrip .des01 img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.descrip .des02 .visit,
+.descrip .des02 .desicon{
+    margin: 50px 0px 0px;
+}
+.descrip .des01 h3 a{
+    color: #26292c;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+.descrip .des01 h3 a:hover, .descrip .temp a:hover,
+.descrip .des01 .rmore a:hover{
+    color: #6fc754;
+}
+.descrip .des01 p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #9fa3a7;
+    line-height: 22px;
+    margin: 25px 0px 0px;
+}
+.descrip .des01 .rmore{
+    text-align: right;
+    margin: 25px 30px 25px 0px;
+    position: relative;
+}
+.descrip .des01 .rmore::after{
+    content: '';
+    display: block;
+    background-color: #8c8f94;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    right: -30px;
+    top: 8px;
+    transition: all 0.4s ease-in-out;
+}
+.descrip .des01 .rmore:hover:after{
+    background-color: #6fc754;
+}
+.descrip .des01  .create{
+    margin: 0px 0px 50px 0px;
+}
+.descrip .des01 .rmore a{
+    color: #8c8f94;
+    font-size: 14px;
+}
+.descrip .temp a{
+    color: #9fa3a7;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+    /* padding: 6px 0px 6px 40px; */
+}
+.descrip .temp .bx{
+    font-size: 40px;
+}
+.descrip .temp,
+.descrip .temp a{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.descrip .temp a img{
+    margin-top: 50px;
+    width: 40px;
+    height: 50px;
+}
+.descrip .temp a{
+    height: 30px;
+    /* background-color: #007bb5; */
+    gap: 10px;
+}
+.descrip .pagenext{
+    margin: 0px auto 50px;
+    /* background-color: #26272D; */
+    width: 400px;
+}
+.descrip .pagenext ol{
+    display: flex;
+    gap: 10px;
+}
+.descrip .pagenext ol li a{
+    border: none;
+    color: #292a2c;
+    background-color: #f5f5f8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: all 0.4s ease-in-out;
+}
+.descrip .pagenext ol li a.nextcolor{
+    color: #f5f5f8;
+    background-color: #6fc754; 
+}
+.descrip .pagenext ol li a:hover{
+    color: #f5f5f8;
+    background-color: #6fc754; 
+}
+.descrip .des02{
+    padding-left: 50px;
+}
+.descrip .des02 h4{
+    font-size: 18px;
+    margin: 0px 0px 30px;
+}
+.descrip .des02 form{
+    position: relative;
+    display: flex;
+    margin: 0px 0px 50px;
+}
+.descrip .des02 form input{
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 15px 80px 15px 20px;
+}
+.descrip .des02 form button{
+    position: absolute;
+    border: none;
+    right: 3px;
+    top: 2px;
+    background: #6fc754;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 12px 20px 8px;
+}
+.descrip .des02 ul{
+    margin: 0px 0px 70px;
+}
+.descrip .des02 ul li{
+    margin: 0px 0px 30px;
+}
+.descrip .des02 ul li a{
+    display: flex;
+    justify-content: space-between;
+    color: #8c8f94;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+.descrip .des02 ul li a:hover{
+    color: #6fc754;
+    margin-left: 20px;
+}
+.descrip .des02 ul li a span{
+    text-align: right;
+}
+/* Contact */
+.contact{
+    background: #f5f5f8;
+    padding: 95px 0px 50px;
+    /* height: 90vh; */
+}
+.perfect .agency{
+    font-size: 18px;
+    margin: 0px 0px 40px;
+}
+.perfect .agency a{
+    color: #26272D;
+}
+.perfect p{
+    color: #9FA3A7;
+    font-size: 14px;
+}
+.perfect p:nth-child(2),
+.contact .keep ul li,
+.contact .nav-menu ul li{
+    margin: 40px 0px 0px;
+}
+.contact a, .contact .nav-menu ul li a{
+    color: #8C8F94;
+    font-size: 16px;
+    margin: 0px 0px 0px 40px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .nav-menu ul li a:hover{
+    color: #6fc754;
+}
+.contact .nav-menu ul li a.over{
+    color: #6fc754;
+}
+.contact .nav-menu ul{
+    display: block;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+section.media{
+    background: #f5f5f8;
+    padding: 15px 0px;
+    border-top: 1px solid #dce0f7;
+}
+.media1{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright p{
+    text-align: right;
+    color: #26272D;
+    font-size: 9px;
+}
+.copyright p:nth-child(2){
+    margin: 5px 0px 0px;
+}
+.icon a{
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 50px;
+    line-height: 36px;
+    transition: all 0.3s ease-in-out;
+}
+.icon a:nth-child(1){
+    border-color: #55acee;
+    color: #55acee;
+}
+.icon a:nth-child(1):hover{
+    color: #fff;
+    background-color: #55acee;
+}
+.icon a:nth-child(2){
+    border-color: #3b5998;
+    color: #3b5998;
+}
+.icon a:nth-child(2):hover{
+    color: #fff;
+    background-color: #3b5998;
+}
+.icon a:nth-child(3){
+    border-color: #dd4b39;
+    color: #dd4b39;
+}
+.icon a:nth-child(3):hover{
+    color: #fff;
+    background-color: #dd4b39;
+}
+.icon a:nth-child(4){
+    border-color: #007bb5;
+    color: #007bb5;
+}
+.icon a:nth-child(4):hover{
+    color: #fff;
+    background-color: #007bb5;
+}
+/* .descrip, .contact, .media{
+    position: relative;
+    z-index: -5;
+} */
+
+.harmburgar{
+    right: 10px;
+    display: none;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.harmburgar .bar{
+    width: 25px;
+    height: 3px;
+    display: block;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+    margin: 5px auto;
+}
+.bxs-up-arrow,
+header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1{
+    display: none;
+    transition: all 0.4s;
+}
+@media(max-width: 770px){
+    .nav-menu ul a, 
+    .contact .agency a{
+    color: #26272D;
+    }
+    .descrip.active{
+        display: none;
+    }
+}

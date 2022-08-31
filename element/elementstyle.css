@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --mont: 'Montserrat', sans-serif;
+}
+header{
+    background: #26272D80 url(imgs/portfolio-hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: 0;
+}
+header::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 70vh;
+    background-color: #26272D80;
+    z-index: -1;
+}
+.container{
+    width: 75%;
+    margin: auto;
+}
+.menu{
+    padding: 50px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .agency a, .nav-menu ul a, 
+.contact .agency a{
+    color: #FFFFFF;
+}
+.nav-menu ul.dropdown-link li a{
+    color: #26272D;
+}
+header .agency a, .contact .agency a{
+    font-size: 18px;
+}
+.nav-menu ul a{
+    font-size: 16px;
+}
+header .agency a span:first-child, 
+.contact .agency a span:first-child{
+    font-weight: bolder;
+}
+header .agency a span:nth-child(2), 
+.contact .agency a span:nth-child(2){
+    font-weight: 500;
+}
+.nav-menu > ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-menu > ul li a{
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu > ul li a:hover, 
+.text ol li a:first-child:Hover{
+    color: #6fc754;
+}
+.nav-menu > ul li a.over{
+    color: #6fc754;
+}
+.dropmenu .bxs-down-arrow{
+    padding: 0px 0px 0px 5px;
+}
+.dropmenu .bxs-down-arrow, .dropmenu .bxs-up-arrow{
+    font-size: 12px;
+}
+.dropdown-link{
+    top: 25px;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #6fc754;
+    background-color: #fff;
+    width: 130px;
+    padding: 10px;
+}
+header .nav-menu ul li:nth-child(2) > ul{
+    display: none;
+}
+header .nav-menu ul li:nth-child(2) > ul li{
+    transition: all 0.3s ease-in-out;
+    
+}
+header .nav-menu ul li:nth-child(2) > ul li:hover{
+    margin-left: 20px;
+}
+header .nav-menu ul li:nth-child(2){
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+header .nav-menu ul li:nth-child(2):hover{
+    color: #6fc754;
+}
+header .nav-menu ul li:nth-child(2):hover > ul{
+    display: block;
+}
+.dropdown-link li{
+    margin: 0px 0px 10px 0px;
+}
+.text{
+    color: #FFFFFF;
+    margin: 180px 0 0 0;
+    text-align: center;
+}
+.text h1{
+    position: relative;
+    font-size: 52px;
+}
+.text h1::after,
+.text h1::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    background-color: #FFFFFF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.text h1::after{
+    top: 85px;
+    height: 6px;
+}
+.text h1::before{
+    top: 95px;
+    height: 3px;
+}
+.text ol{
+    margin: auto;
+    display: flex;
+    width: 200px;
+    gap: 20px;
+    font-size: 14px;
+    padding: 60px 15px 8px;
+}
+.text ol li a:first-child{
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Typography */
+.typo{
+    color: #26272D;
+    padding: 100px 0px;
+}
+.typo .typography h1, .typo .typography h2, .typo .typography h3,
+.typo .typography h4, .typo .typography h5, .typo .typography h6{
+    margin: 50px 0px 10px;
+}
+.typo .typography h1{
+    font-size: 52px;
+}
+.typo .typography h2{
+    font-size: 42px;
+}
+.typo .typography h3{
+    font-size: 24px;
+}
+.typo .typography h4{
+    font-size: 18px;
+}
+.typo .typography h5{
+    font-size: 18px;
+}
+.typo .typography h6{
+    font-size: 12px;
+}
+.typo .typography p{
+    color: #9FA3A7;
+    font-size: 14px;
+    margin: 0px 0px 10px;
+}
+.typo .typography .column h2{
+    text-align: center;
+    font-size: 42px;
+    padding: 0px 0px 70px;
+    position: relative;
+}
+.column h2::after{
+    position: absolute;
+    content: '';
+    background: #267DF4;
+    width: 50px;
+    height: 2px;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.typo .typography .column .btn-btn a{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0px 0px 10px;
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 0;
+    border-radius: 50px;
+    color: #26272d;
+    background-color: #fff;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    color: #26272D;
+}
+.typo .typography .column .btn-btn a:nth-child(2){
+    border: 1px solid #26272D;
+}
+.typo .typography .column .btn-btn a:nth-child(3){
+    background-color: #267DF4;
+    color: #fff;
+}
+.typo .typography .column .btn-btn a:nth-child(4){
+    background-color: #6fc754;
+    color: #fff;
+}
+.typo .typography .column .btn-btn a:nth-child(5){
+    background-color: #f5f5f8;
+}
+.typo .typography .column .btn-btn a:hover, 
+.typo .typography .column form button:hover{
+    background-color: #26272D;
+    color: #fff;
+}
+.typo .typography .column .btn-btn a:nth-child(5):hover{
+    background-color: #6fc754;
+    color: #fff;
+}
+.typo .typography .column form{
+    text-align: center;
+}
+.typo .typography .column form label{
+    cursor: default;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.typo .typography .column form .form-group{
+    text-align: left;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.typo .typography .column form input{
+    border-radius: 25px;
+    height: 50px;
+    padding: 15px 20px;
+    border-color: #f5f5f8;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all ease-in-out 0.15s;
+}
+.typo .typography .column form button{
+    background-color: #6fc754;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    line-height: 50px;
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.typo .typography .column select,
+.typo .typography .column select option{
+    border: 1px solid #26272d;
+    border-radius: 10px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.typo .typography .column .picker{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.typo .typography .column .picker select:hover{
+    color: #fff;
+    background-color: #26272D;
+}
+.typo .typography .column .picker select:hover option{
+    color: #26272D;
+    background-color: #fff;
+}
+.typo .typography .column .picker select option{
+    color: #6fc754;
+}
+.typo .typography .column .picker .checkboxs .check-btn,
+.typo .typography .column .picker .radiobuts .radio-btn{
+    margin: 0px 0px 15px 0px;
+}
+.typo .typography .column .picker input[type="radio"]{
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    margin-top: 0;
+    margin: 4px 0 0;
+    line-height: normal;
+}
+.typo .typography .column .picker input[type="radio"]:not(:checked) + label,
+.typo .typography .column .picker input[type="radio"]:checked + label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.radio-btn label{
+    font-weight: 400;
+    display: inline-block;
+    max-width: 100%;
+}
+.typo .typography .column .picker input[type="radio"]:not(:checked) + label::before,
+.typo .typography .column .picker input[type="radio"]:checked + label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #f5f5f8;
+    border-radius: 50px;
+    box-shadow: none;
+    transform: translateY(-50%);
+}
+.typo .typography .column .picker input[type="radio"]:checked + label:after,
+.typo .typography .column .picker input[type="radio"]:not(:checked) + label:after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 4px;
+    background-color: #6fc754;
+    border-radius: 50px;
+    transform: translateY(-50%);
+    transition: opacity .2s;
+}
+.typo .typography .column .picker input:checked{
+    background-color:  #6fc754;
+}
+
+
+.typo .typography .column .accord{
+    /* display: flex; */
+    gap: 10px;
+    justify-content: space-between;
+}
+.typo .typography .column .accord p{
+    line-height: 25px;
+}
+.typo .typography .column .tab01{
+    width: 100%;
+}
+.typo .typography .column .tab1{
+    padding: 15px;
+    border: 1px solid #26272d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 10px auto 50px;
+}
+.typo .typography .column .tab span{
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #26272d;
+    border: 1px solid #26272d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.typo .typography .column .tab span:hover{
+    color: #FFFFFF;
+    background-color: #6fc754;
+    border: 1px solid #6fc754;
+}
+.typo .typography .column .tab span.tab_1,
+.typo .typography .column .tab span.tab_2.tabmiddle,
+.typo .typography .column .tab span.tab_3.tabbottom{
+    border: 1px solid #6fc754;
+    color: #FFFFFF;
+    background-color: #6fc754;
+}
+.tabtext2, .tabtext3{
+    display: none;
+}
+
+/* JAVASCRIPT */
+/* .slide{
+    border-radius: 0px;
+} */
+/* .typo .typography .tab1 .tabtext1.tabhide01{
+    display: block;
+} */
+
+.typo .typography .tab02{
+    width: 100%;
+    border: 1px solid #26272D;
+    border-radius: 10px;
+}
+.typo .typography .tab02 .panel span{
+    cursor: pointer;
+    display: block;
+    color: #26272D;
+    width: 100%;
+    padding: 10px 15px; 
+    transition: all 0.5s ease-in-out;
+}
+.typo .typography .tab02 .panel span .bx{
+   float: right;
+}
+.typo .typography .tab02 .panel span .bxs-up-arrow,
+.typo .typography .tab02 .panel span.panel-head .bxs-down-arrow.slidearrowdownhead,
+.typo .typography .tab02 .panel span.panel-middle .bxs-down-arrow.slidearrowdownmiddle,
+.typo .typography .tab02 .panel span.panel-bottum .bxs-down-arrow.slidearrowdown{
+    display: none;
+}
+/* .typo .typography .tab02 .panel span .bxs-down-arrow.slidearrowdown{
+    display: none;
+} */
+.typo .typography .tab02 .panel span.panel-head .bxs-up-arrow.slidearrowuphead,
+.typo .typography .tab02 .panel span.panel-middle .bxs-up-arrow.slidearrowupmiddle,
+.typo .typography .tab02 .panel span.panel-bottum .bxs-up-arrow.slidearrowup{
+    display: block;
+}
+.typo .typography .tab02 .panel span.panel-head{
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid #26272D;
+}
+.typo .typography .tab02 .panel span.panel-middle{
+    /* border-radius: 10px 10px 0px 0px; */
+    border-top: 1px solid #26272D;
+}
+.typo .typography .tab02 .panel span.panel-bottum{
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #26272D;
+    border-bottom: 1px solid #26272D;
+}
+/* .typo .typography .tab02 .panel span.panel-bottum.slide1,
+.typo .typography .tab02 .panel span.panel-bottum.slide2{
+    border-radius: 0px 0px 10px 10px;
+} */
+.typo .typography .tab02 .panel span.panel-bottum.slide{
+    border-radius: 0px 0px;
+    /* border-bottom: 1px solid #26272D; */
+}
+.typo .typography .tab02 .panel span:hover{
+    color: #FFFFFF;
+    background-color: #6fc754;
+}
+.typo .typography .tab02 .panel .panel-body{
+    display: none;
+    padding: 15px;
+}
+/* .typo .typography .tab02 div:nth-child(1) .panel-body,
+.typo .typography .tab02 div:nth-child(2) .panel-body,
+.typo .typography .tab02 div:nth-child(3) .panel-body{
+    display: none;
+} */
+.typo .typography .tab02 div:nth-child(2) .panel-body{
+    border: 1px solid #26272D;
+}
+.typo .typography .column .pagenext{
+    margin: 0px auto 50px;
+    width: 480px;
+}
+.typo .typography .column .pagenext ol{
+    display: flex;
+    gap: 20px;
+}
+.typo .typography .column .pagenext ol li a{
+    border: none;
+    color: #292a2c;
+    background-color: #f5f5f8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: all 0.4s ease-in-out;
+}
+.typo .typography .column .pagenext ol li a.nextcolor{
+    color: #f5f5f8;
+    background-color: #6fc754; 
+}
+.typo .typography .column .pagenext ol li a:hover{
+    color: #f5f5f8;
+    background-color: #6fc754; 
+}
+
+/* Contact */
+.contact{
+    background: #f5f5f8;
+    padding: 95px 0px 50px;
+}
+.perfect .agency{
+    font-size: 18px;
+    margin: 0px 0px 40px;
+}
+.perfect .agency a{
+    color: #26272D;
+}
+.perfect p{
+    color: #9FA3A7;
+    font-size: 14px;
+}
+.perfect p:nth-child(2),
+.contact .keep ul li,
+.contact .nav-menu ul li{
+    margin: 40px 0px 0px;
+}
+.contact a, .contact .nav-menu ul li a{
+    color: #8C8F94;
+    font-size: 16px;
+    margin: 0px 0px 0px 40px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .nav-menu ul li a:hover{
+    color: #6fc754;
+}
+.contact .nav-menu ul li a.over{
+    color: #6fc754;
+}
+.contact .nav-menu ul{
+    display: block;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+section.media{
+    background: #f5f5f8;
+    padding: 15px 0px;
+    border-top: 1px solid #dce0f7;
+}
+.media1{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright p{
+    text-align: right;
+    color: #26272D;
+    font-size: 9px;
+}
+.copyright p:nth-child(2){
+    margin: 5px 0px 0px;
+}
+.icon a{
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 50px;
+    line-height: 36px;
+    transition: all 0.3s ease-in-out;
+}
+.icon a:nth-child(1){
+    border-color: #55acee;
+    color: #55acee;
+}
+.icon a:nth-child(1):hover{
+    color: #fff;
+    background-color: #55acee;
+}
+.icon a:nth-child(2){
+    border-color: #3b5998;
+    color: #3b5998;
+}
+.icon a:nth-child(2):hover{
+    color: #fff;
+    background-color: #3b5998;
+}
+.icon a:nth-child(3){
+    border-color: #dd4b39;
+    color: #dd4b39;
+}
+.icon a:nth-child(3):hover{
+    color: #fff;
+    background-color: #dd4b39;
+}
+.icon a:nth-child(4){
+    border-color: #007bb5;
+    color: #007bb5;
+}
+.icon a:nth-child(4):hover{
+    color: #fff;
+    background-color: #007bb5;
+}
+/* .typo, .contact, .media{
+    position: relative;
+    z-index: -5;
+} */
+
+.harmburgar{
+    right: 10px;
+    display: none;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.harmburgar .bar{
+    width: 25px;
+    height: 3px;
+    display: block;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+    margin: 5px auto;
+}
+.dropmenu .bxs-up-arrow,
+header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1{
+    display: none;
+    transition: all 0.4s;
+}
+@media(max-width: 770px){
+    .nav-menu ul a, 
+    .contact .agency a{
+    color: #26272D;
+    }
+    .typo.active{
+        display: none;
+    }
+}

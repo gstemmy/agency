@@ -1,0 +1,346 @@
+@media(max-width: 990px){
+    .container{
+        width: 90%;
+    }
+    .text h1{
+        font-size: 42px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    /* Services */
+    .column h2{
+        font-size: 36px;
+    }
+    .column p{
+        font-size: 18px;
+        margin: 0px 0px 50px;
+    }
+    .col{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .col1 h3{
+       font-size: 13px;
+    }
+    /* Responsive Web Design */
+    .responsive .respon .text h2{
+        font-size: 36px;
+        padding: 0px 0px 25px;
+    }
+    /* Responsive Web Design */
+    .responsive{
+        padding: 10px 0px 100px;
+    }
+    /* Latest Work */
+    .work-item{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1.5fr);
+    }
+     /* potitemmore */
+    .potwork .work-item{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+    /* Subscribe */
+    .sub{
+        padding: 50px 0 70px;
+    }
+    .sub h2{
+        font-size: 32px;
+        padding: 0px 0px 20px;
+    }
+    /* contact  */
+    .perfect{
+        width: 30%;
+    }
+    /* blog */
+    /* DESCRIPTION */
+    .descrip01{
+        display: block;
+    }
+    .des02, .descrip .des02 form input{
+        width: 100%;
+    }
+}
+
+@media(max-width: 770px){
+    .container{
+        width: 95%;
+    }
+    .web1{
+        display: none;
+    }
+    .text h1{
+        font-size: 32px;
+    }
+    .text p{
+        font-size: 14px;
+        margin: 20px 0px 10px;
+    }
+    /* web design */
+    .design{
+        padding: 30px 0px 50px;
+    }
+    .row{
+        padding: 0;
+    }
+    .web h2{
+        padding: 0px 0px 15px;
+    }
+
+    /* Services */
+    .column h2{
+        font-size: 28px;
+        padding: 0px 0px 50px;
+    }
+    .column p{
+        font-size: 16px;
+        padding: 0px 0px 20px;
+    }
+
+    /* Services */
+    .column p{
+        font-size: 16px;
+        margin: 0px 0px 20px;
+    }
+    .col1 h3{
+        font-size: 15px;
+        margin: 15px 0px 5px;
+    }
+
+    /* Responsive Web Design */
+    .responsive .respon .count{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    /* Subscribe */
+    .sub{
+        padding: 30px 0 50px;
+    }
+    .sub h2{
+        font-size: 28px;
+        padding: 0px 0px 15px;
+    }
+    .sub form{
+        width: 100%;
+    }
+    /* Contact */
+    .row1{
+        flex-wrap: wrap;
+    }
+    .perfect p:nth-child(2),
+    .contact .keep ul li,
+    .contact .nav-menu ul li{
+        margin: 20px 0px 0px;
+    }
+    .contact a, .contact .nav-menu ul li a{
+        margin: 0px;
+    }
+    /* potitem */
+    .text h1::after{
+        top: 65px;
+    }
+    .text h1::before{
+        top: 75px;
+    }
+     /* blog */
+    /* DESCRIPTION */
+    .descrip .des01 img{
+        height: 240px;
+    }
+    .descrip .pagenext ol li a{
+        padding: 10px;
+    }
+    .descrip .des02{
+        padding-left: 0px;
+    }
+    /* contact */
+    .message .info001, .message .info001 form .textinfo{
+        display: block;
+    }
+    .message .info01, .message .info002, 
+    .message .info01{
+        width: 100%;
+    }
+     /* blogmore */
+     /* Description */
+     .descrip .temp a{
+        font-size: 12px;
+     }
+    /* Element */
+    /* Typography */
+    .typo{
+        padding: 50px 0px;
+    }
+    .typo .typography .column .tab1{
+        border-top-right-radius: 0px;
+    }
+    .typo .typography .column .picker,
+    .typo .typography .column .accord{
+        display: block;
+    }
+    .typo .typography .column .picker .checkboxs{
+        margin: 15px 0px;
+    }
+    .typo .typography .column .tab{
+        margin-bottom: -10px;
+    }
+    .typo .typography .column .tab span{
+        display: block;
+        width: 100%;
+    }
+    .typo .typography .column .tab span:nth-child(2),
+    .typo .typography .column .tab span:nth-child(3){
+        border-radius: 0;
+    }
+
+    /* MENU HARMURGER */
+    header .menu .nav-menu-up,
+    header .menutoggle .menu .nav-menu-up{
+        display: block;
+        background-color: #f5f5f8;
+        padding-left: 0;
+        list-style: none;
+        position: fixed;
+        padding: 100px 0px 0px 0px;
+        left: 0;
+        top: -100%;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    header .menu .nav-menu-up.active{
+        top: 0;
+    }
+    header .menu .nav-menu-up.active ul{
+        transition: all 0.5s;
+    }
+    header .menu .nav-menu-up ul{
+        display: block;
+    }
+    header .menu .nav-menu-up ul li,
+    header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1 li{
+        margin: 0px 0px 20px 0px;
+    }
+    header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1 {
+        margin: 20px 0px 0px;
+    }
+    header .nav-menu ul li:nth-child(2):hover > ul.dropdown-link{
+        display: none;
+    }
+    header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1.active,
+    .harmburgar{
+        transition: all 0.4s;
+        display: block;
+    }
+    header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1 li{
+        transition: all 0.3s;
+    }
+    header .nav-menu ul li:nth-child(2) > ul.dropdown-link-1 li:hover{
+        margin-left: 30px;
+    }
+    
+    .harmburgar.active{
+        position: fixed;
+        margin: 5px 20px 0px 0px;
+    }
+    .harmburgar.active .bar-blog{
+        background-color: #26272D;
+    }
+    .harmburgar.active .bar:nth-child(1){
+        transition: all 0.3s;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .harmburgar.active .bar:nth-child(3){
+        transition: all 0.3s;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .harmburgar.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .dropmenu.active .bxs-up-arrow{
+        display: inline;
+    }
+    .dropmenu.active .bxs-down-arrow{
+        display: none;
+    }
+    header .nav-menu ul li:nth-child(2).active ul.dropdown-link-1{
+        top: 0;
+        transition: all 0.5s;
+    }
+    ul.dropdown-link-1{
+        transition: all 0.5s;
+        top: -100%;
+    }
+
+
+
+
+
+}
+@media(max-width: 480px){
+    /* Services */
+    .col, .work-item, .row1{
+        display: block;
+    }
+    .row1 .perfect{
+        width: 100%;
+    }
+    .row1 .keep{
+        margin: 20px 0px;
+    }
+    .worlk-respon{
+        width: 100%;
+    }
+    /* blog */
+    /* DESCRIPTION  */
+    .descrip .des01 .temp{
+        display: block;
+    }
+    .descrip .des01 .temp a{
+        margin: 15px 0px;
+    }
+    .descrip .temp .bx{
+        font-size: 30px;
+    }
+    .descrip .pagenext,
+    .typo .typography .column .pagenext{
+        width: 100%;
+    }
+    .descrip .pagenext ol,
+    .typo .typography .column .pagenext ol{
+        flex-wrap: wrap;
+    }
+    .descrip .pagenext ol li,
+    .typo .typography .column .pagenext ol li{
+        margin: 10px 0px;
+    }
+    .media1{
+        text-align: center;
+        display: block
+    }
+    .copyright{
+        margin: 10px 0px;
+    }
+    .copyright p{
+        text-align: center;
+    }
+    .work .column ul li{
+        border-radius: 50px;
+        padding: 7px 15px;
+    }
+}
+@media(max-width: 310px){
+    .work .column ul{
+        display: block;
+        text-align: center;
+    }
+    
+}
